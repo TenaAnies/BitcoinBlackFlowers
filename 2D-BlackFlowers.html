@@ -4,7 +4,7 @@
     <title>2D Random Black Flowers</title>
 </head>
 <body>
-    <svg xmlns="http://www.w3.org/2000/svg" width="800" height="1200" version="1.1">
+    <svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" version="1.1">
         <rect x="0" y="0" width="100%" height="100%" fill="black" />
         <g id="blackFlowers"></g>
     </svg>
@@ -45,23 +45,23 @@
         }
         // Generate random black flowers at different places
         for (let i = 0; i < 15; i++) {
-            const randomCoordinates = getRandomCoordinates(75, 725, 75, 500);
+            const randomCoordinates = getRandomCoordinates(75, 1005, 75, 800);
             generateBlackFlower('blackFlowers', 4880, 85, 0.1, randomCoordinates.x, randomCoordinates.y);
         }
         for (let i = 0; i < 10; i++) {
-            const randomCoordinates = getRandomCoordinates(55, 745, 55, 500);
+            const randomCoordinates = getRandomCoordinates(55, 1025, 55, 800);
             generateBlackFlower('blackFlowers', 6680, 65, 0.05, randomCoordinates.x, randomCoordinates.y);
         }
         for (let i = 0; i < 20; i++) {
-            const randomCoordinates = getRandomCoordinates(45, 755, 45, 500);
+            const randomCoordinates = getRandomCoordinates(45, 1035, 45, 800);
             generateBlackFlower('blackFlowers', 9660, 55, 0.01, randomCoordinates.x, randomCoordinates.y);
         }
         for (let i = 0; i < 5; i++) {
-            const randomCoordinates = getRandomCoordinates(75, 725, 75, 1125);
+            const randomCoordinates = getRandomCoordinates(75, 1005, 75, 1845);
             generateBlackFlower('blackFlowers', 4880, 85, 0.1, randomCoordinates.x, randomCoordinates.y);
         }
         for (let i = 0; i < 20; i++) {
-            const randomCoordinates = getRandomCoordinates(45, 755, 45, 1155);
+            const randomCoordinates = getRandomCoordinates(45, 1035, 45, 1875);
             generateBlackFlower('blackFlowers', 9660, 55, 0.01, randomCoordinates.x, randomCoordinates.y);
         }
     </script>
