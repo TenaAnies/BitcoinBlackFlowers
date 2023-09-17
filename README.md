@@ -1,2 +1,2 @@
 # BlackFlowers
-javascript for the generation of the SVG Black Flowers artistic collection
+javascripts created for the generation of 2D & 3D Black Flowers artistic collection
