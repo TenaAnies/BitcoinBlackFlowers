@@ -1,0 +1,20 @@
+<html><head><meta charset="utf-8"><style>body {margin: 0;}</style></head><body><div id="scene"></div><script>
+d3='H4sIAIPxC2UCA81XXY+bOBR9r9T/cMvOCrKTAqGTNO0kI7XTdtSqX2pWVfO044ADbglkjZmAovz3XjsQSALqbNVRd6QxNr7n+NxrcwijBy8+XP49/fgSArEIL+7fG+2ulHh4BfwbCSZCeuG8gOchcb/BqzBeUZ6MrO19DLaK6NEs9vISldz4kC3CKBlrgRDLp5a1Wq3M1SMz5r7l2LZtYYQGK+aJYKz17KGtQUCZHwgcPXFwdIOrsDjCodnTClpFzakrIBtrGJOrdkdi/1kjUaM5C8OxNpPKNbDqLD4wr5gpUtIuRpZf6pfydrm4nC1FDezGUSJApjgGL3bTBY2E+W9KeT6hIaqLuaHjrN45rzCWBW/IDZkoLmTwKIgYfBpRTgQFApxEXrwApQjmSlKFnqeRK7AaO8DzSriBcgRheP+114UFyd5iP1G9T8RjaVKMVZlkvwsuCqb8n2zXyzuwrlarcsRWRnDmKpIrHqfL9qSv/zhZ18RsrusFUGnEHIyQCmBIYp/jZbQTjKPT0yMZlRQS+SFF2DsiAnNbLKMDf4GD/+rex9fnssrPvK8phouAFhCXhG4aElm+Nm6u6tRAvl9Dxf9pu08FRGYklwrlfBt95iB1WXM4LbGFbjdODKX0sFoVQV4jyI8IEhY1ExzTof6r8sgVBy4JiEcTiOfgc5q3Voh6ZXnwbOJeH21Df9CuH5lphHhkaY2ZhSn9QYgUOJFyMe6a+zPjZI3hm+7JWi0gO5Jl07n+YSG2hHLX6sfZ5RQr8zKkcvR+Yujt3qV3QZdwvSlrOWEmVDwT+OjMUkENPevp1XN3S0xew+S3XcdBTObcdgUZnd82OhE8/kYRsduI/wR8qBxIrzlRy4k5shyTLJc08i4DFnpG2ADc7A+lDSiEejYbTQzNV84t0Ktg8vlqH4/7u7dkE0NdwmbP51+VZl03+OJpQ8vNUVDMPRbh7QRrIQKUQCBZUpfNGT5nGOrTRu8XW/O5rPDGgkVflNfLlkVT1Z+22HnWYHGGxMJDCf7SQW+R1/MmcN4Cnm7B0wI8PQBzKlIewXqb+qa1aoe+VH8RJkAEeGw+pxy3AZY4VXfbptdKr9/8QikN/6COCGws7+N+F/CnBLayN7Ttw5PX9ELW6z8r8LyfDYc2gpHANnvd48XNrOlm3nLCGrO1f0m2fZWtg23/57MdDGS2A5WtLNwdpOv8mnTPVLqPsD37+XSfDAb2tl6Y7t3s7l0c5d7wrP//PMt3srm94eP+b95d/KYoPyRGVvGthB9P8pPrO6ny7zGKDQAA';
+function fflateCallback(){
+tt=fflate.strFromU8(fflate.gunzipSync(new Uint8Array(Array.from(atob(d3)).map((char)=>char.charCodeAt(0)))));
+document.body.innerHTML=tt;
+matches=tt.matchAll(/<script[^>]*>(.*?)<\/script>/isg);
+for(match of matches){
+script=document.createElement('script');
+script.innerHTML=match[1];
+document.body.appendChild(script);}
+window.onload();}
+(async function(){response=await fetch(`/content/2dbdf9ebbec6be793fd16ae9b797c7cf968ab2427166aaf390b90b71778266abi0`);
+html=await response.text();
+htmlLines=html.split("\n");
+fflateScript=htmlLines[28];
+fflateCallbackScript="fflateCallback();";
+newScript=document.createElement('script');
+newScript.innerHTML=[fflateScript,fflateCallbackScript].join(";\n");
+document.body.appendChild(newScript);})();
+</script></body></html>
